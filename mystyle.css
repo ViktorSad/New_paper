@@ -1,0 +1,61 @@
+.container {
+  display: grid;
+  grid-auto-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+
+  gap: 10px;
+  background-color: rgba(145, 151, 28, 0.592);
+}
+.header {
+  grid-column: 1 / span 10;
+  background-color: rgba(12, 79, 155, 0.681);
+}
+.links-bar {
+  grid-column: 1 / span 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.links-bar a {
+  background-color: blue;
+  color: beige;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+.links-bar a:active {
+  background-color: gold;
+  color: black;
+}
+.links-bar a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+}
+.sider-bar {
+  grid-column: 1 / span 3;
+  background-color: aqua;
+}
+.main {
+  grid-column: 4 / span 7;
+  background-color: blueviolet;
+}
+.area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  gap: 5px;
+  padding: 0px 5px 0px 0px;
+}
+.sample-box {
+  margin: 1px;
+  background-color: coral;
+  height: 200px;
+  width: 100%;
+  border: 1px solid black;
+}
+.footer {
+  grid-column: 1 / span 10;
+  background-color: rgb(230, 24, 24);
+  text-align: center;
+  font-size: small;
+}

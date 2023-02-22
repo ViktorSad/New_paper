@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Website</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #d6d6c2;
+      }
+      h1 {
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 200px repeat(8, 1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+        padding: 20px;
+        background-color: #bfbfbf;
+      }
+
+      .header {
+        grid-column: 1 / span 9;
+        background-color: #fff2cc;
+        padding: 10px;
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        color: #4d4d33;
+      }
+      .menu {
+        grid-column: 1 / span 9;
+        background-color: #fff2cc;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-around; */
+      }
+
+      .menu {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      /* Style the links inside the navigation bar */
+      .menu a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      /* Change the color of links on hover */
+      .menu a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Add a color to the active/current link */
+      .menu a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .search-bar {
+        display: flex;
+        align-items: center;
+      }
+
+      .search-bar input[type="text"] {
+        padding: 5px 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f2d6b8;
+        color: #4d4d33;
+      }
+
+      .search-bar button {
+        background-color: #4d4d33;
+        color: #fff2cc;
+        padding: 5px 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        justify-self: start;
+        margin-left: 10px;
+      }
+
+      .sidebar {
+        grid-column: 1 / span 1;
+        flex-direction: column;
+        background-color: white;
+        padding: 5px;
+        font-size: 12px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+
+        color: black;
+      }
+      .sidebar-artical {
+        background-color: #d6d6c2;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+      }
+
+      .main-content {
+        grid-column: 2 / span 8;
+        background-color: #f2d6b8;
+        padding: 10px;
+        font-size: 18px;
+        color: #4d4d33;
+      }
+      .gallary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: auto;
+        gap: 5px;
+      }
+      .gallary img {
+        width: 100%;
+      }
+      .kadr {
+        border-bottom: 1px solid black;
+        padding: 5px;
+      }
+      .effect1 {
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+      }
+      .text-under {
+        font-size: small;
+        font-family: monospace;
+        color: black;
+        justify-self: start;
+      }
+
+      .footer {
+        grid-column: 1 / span 9;
+        background-color: #fff2cc;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: #4d4d33;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>News Website</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="menu">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-artical">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
+          voluptas, esse molestias officiis nemo id numquam distinctio,
+          assumenda harum hic nesciunt odio dolore ullam. Omnis labore ullam
+          harum suscipit.<br />
+          <a href="" style="justify-content: center">Read more..</a>
+        </div>
+        <div class="sidebar-artical">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
+          voluptas, esse molestias officiis nemo id numquam distinctio,
+          assumenda harum hic nesciunt odio dolore ullam. Omnis labore ullam
+          harum suscipit.....
+        </div>
+        <div class="sidebar-artical">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
+          voluptas, esse molestias officiis nemo id numquam distinctio,
+          assumenda harum hic nesciunt odio dolore ullam. Omnis labore ullam
+          harum suscipit.....
+        </div>
+        <div class="sidebar-artical">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
+          voluptas, esse molestias officiis nemo id numquam distinctio,
+          assumenda harum hic nesciunt odio dolore ullam. Omnis labore ullam
+          harum suscipit.....
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="gallary">
+          <div class="kadr effect1">
+            <img src="alley-g3ea785afa_640.jpg" />
+            <div class="text-under">animi, ad tempore dicta!</div>
+          </div>
+          <!-- <img src="dawson-lovell-W_MUqtuHwyY-unsplash.jpg" alt="hello" /> -->
+          <div class="kadr effect1">
+            <img src="matt-jones-9CPAjGVB378-unsplash.jpg" alt="hello2" />
+            <div class="text-under">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex enim
+            </div>
+          </div>
+          <div class="kadr effect1">
+            <img src="pexels-aleksandar-pasaric-9793670.jpg" alt="hello3" />
+            <div class="text-under">
+              quae doloremque architecto praesentium! Deserunt vel aperiam
+            </div>
+          </div>
+          <div class="kadr effect1">
+            <img src="pexels-mikhail-volkov-12166454.jpg" alt="hello4" />
+            <div class="text-under">
+              tempora modi fugiat voluptatum amet laboriosam iste mollitia culpa
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Copyright © 2023 News Website. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
